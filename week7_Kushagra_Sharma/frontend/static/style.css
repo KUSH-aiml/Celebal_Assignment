@@ -1,0 +1,172 @@
+:root {
+  --bg: #f7f8fa;
+  --text: #1f2430;
+  --muted: #6b7280;
+  --accent: #2f6fed;
+  --accent-dark: #2557c7;
+  --border: #e3e5e9;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: -apple-system, "Segoe UI", Inter, Roboto, sans-serif;
+}
+
+.topbar {
+  padding: 20px 40px;
+  border-bottom: 1px solid var(--border);
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.brand span {
+  color: var(--accent);
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 100px 20px 60px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  color: var(--muted);
+  font-size: 17px;
+  margin-bottom: 48px;
+}
+
+.upload-box {
+  border: 2px dashed var(--border);
+  border-radius: 16px;
+  padding: 48px 24px;
+  transition: border-color 0.2s ease;
+}
+
+.upload-box.dragover {
+  border-color: var(--accent);
+}
+
+.primary-btn {
+  background: var(--accent);
+  color: white;
+  border: none;
+  padding: 16px 36px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.primary-btn:hover {
+  background: var(--accent-dark);
+}
+
+.drop-hint {
+  color: var(--muted);
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.status-text {
+  margin-top: 20px;
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.hidden {
+  display: none;
+}
+
+.doc-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  font-size: 14px;
+  color: var(--muted);
+}
+
+.link-btn {
+  background: none;
+  border: none;
+  color: var(--accent);
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.ask-box {
+  display: flex;
+  gap: 10px;
+}
+
+#question-input {
+  flex: 1;
+  padding: 14px 16px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+#answer-area {
+  margin-top: 32px;
+  text-align: left;
+}
+
+.answer-card {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 16px;
+}
+
+.answer-question {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.answer-text {
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.sources {
+  margin-top: 14px;
+}
+
+.sources summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.source-chunk {
+  font-size: 13px;
+  color: var(--muted);
+  border-left: 2px solid var(--border);
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  padding: 24px;
+}

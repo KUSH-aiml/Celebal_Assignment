@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Document QA</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+  <nav class="topbar">
+    <div class="brand">Doc<span>QA</span></div>
+  </nav>
+
+  <main>
+    <section id="upload-view" class="view">
+      <h1>Ask your document anything</h1>
+      <p class="subtitle">Upload a PDF or text file, then ask questions grounded only in its content.</p>
+
+      <div class="upload-box" id="drop-zone">
+        <input type="file" id="file-input" accept=".pdf,.txt" hidden>
+        <button class="primary-btn" id="select-btn">Select a document</button>
+        <p class="drop-hint">or drop a file here</p>
+      </div>
+
+      <p id="status-text" class="status-text"></p>
+    </section>
+
+    <section id="chat-view" class="view hidden">
+      <div class="doc-info">
+        <span id="doc-name"></span>
+        <button id="new-doc-btn" class="link-btn">Upload a different document</button>
+      </div>
+
+      <div class="ask-box">
+        <input type="text" id="question-input" placeholder="Ask a question about this document">
+        <button class="primary-btn" id="ask-btn">Ask</button>
+      </div>
+
+      <div id="answer-area"></div>
+    </section>
+  </main>
+
+  <footer>Answers are generated only from the uploaded document.</footer>
+
+  <script src="/static/script.js"></script>
+</body>
+</html>
